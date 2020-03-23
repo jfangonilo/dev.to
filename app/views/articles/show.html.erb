@@ -1,3 +1,11 @@
+# I believe that this is going to be the single most relevant file for picking youtube videos based on relevancy.
+# I chose this file because articles already have a very helpful component that picks very specific key words
+# These are the.....TITLE AND TAGS! aka TTs
+# Tags are up to 4 words similar to a hastag in most social media platforms that the user pics.
+# This is helpful because you won't have to do any scanning of the article to find words.  A majority would be irrelevant simple form verbs or grammatical articles like 'the'
+
+# Still figuring out erb but title is below as @article.title
+# Location of title in html is line 127
 <% title @article.title %>
 
 <%= render "shared/webcomponents_loader_script" %>
@@ -159,9 +167,15 @@
           <span class="action-space" id="action-space"></span>
         </h3>
         <% cache("main-article-tags-#{@article.cached_tag_list}", expires_in: 30.hours) do %>
+
+        # div below is where we hold our tags
+
           <div class="tags">
             <% @article.cached_tag_list_array.each do |tag| %>
               <% tag_hash = tag_colors(tag) %>
+              
+              # Each tag has class="tag"
+
               <a class="tag" href="/t/<%= tag %>" style="background-color:<%= tag_hash[:background] %>;color:<%= tag_hash[:color] %>">#<%= tag %></a>
             <% end %>
           </div>
@@ -186,6 +200,11 @@
     <%= render "articles/org_branding", organization: @organization %>
     <%= render "articles/full_comment_area" %>
   </div>
+
+# Line 199 ends the div holding the main section of the article
+# Somewhere below...I believe is a "classic dev post" followed by "another post you might like"
+# Depending on where we decide to put these videos would be either right here at the top or maybe below the suggested_articles
+
   <% cache("article-bottom-content-#{@article.id}", expires_in: 18.hours) do %>
     <% @classic_article = Suggester::Articles::Classic.new(@article, not_ids: [@article.id]).get.first %>
     <% if @classic_article %>
