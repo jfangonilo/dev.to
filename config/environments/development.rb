@@ -4,7 +4,7 @@ Rails.application.configure do
   # we can't enable this flag by default
   # see <https://github.com/thepracticaldev/dev.to/pull/296#discussion_r210635685>
   config.webpacker.check_yarn_integrity = ENV.fetch("YARN_INTEGRITY_ENABLED", "true") == "true"
-
+  config.webpacker.check_yarn_integrity = false
   # Settings specified here will take precedence over those in config/application.rb.
 
   # In the development environment your application's code is reloaded on
