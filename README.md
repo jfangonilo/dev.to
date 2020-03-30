@@ -32,10 +32,10 @@ This is a project that explores an existing production code base.  We use the op
 - Practice an advanced, professional git workflow
 
 ### Wins:
-- 
+- Features delivered with an entirely remote workflow
   
 ### Challenges
-- 
+- Collaborating remotely and pairing over video calls
 
 ### Future Iterations
 - Implement some kind of thumbs-up/thumbs-down to mark them as actually relevant or not relevant
