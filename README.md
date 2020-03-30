@@ -32,10 +32,12 @@ This is a project that explores an existing production code base.  We use the op
 - Practice an advanced, professional git workflow
 
 ### Wins:
-- Features delivered with an entirely remote workflow
+- Features delivered with an entirely remote workflow.
+-  Gain the ability to dive into a pre-existing code base and implement new code/features. Finding out a method on how to understand not only where pieces of code are, but also their functionality.
   
 ### Challenges
-- Collaborating remotely and pairing over video calls
+- Collaborating remotely and pairing over video calls.
+- Digging through the code to find files that were applicable to our track, and also understanding how a .erb file works.
 
 ### Future Iterations
 - Implement some kind of thumbs-up/thumbs-down to mark them as actually relevant or not relevant
