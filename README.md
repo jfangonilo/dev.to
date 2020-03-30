@@ -33,11 +33,13 @@ This is a project that explores an existing production code base.  We use the op
 
 ### Wins:
 - Features delivered with an entirely remote workflow.
--  Gain the ability to dive into a pre-existing code base and implement new code/features. Finding out a method on how to understand not only where pieces of code are, but also their functionality.
+- Gain the ability to dive into a pre-existing code base and implement new code/features. Finding out a method on how to understand not only where pieces of code are, but also their functionality.
+- Dive into unfamiliar front-end language( Ruby w/ .erb) to make conceptual transfers with pre-existing knowledge.
   
 ### Challenges
 - Collaborating remotely and pairing over video calls.
-- Digging through the code to find files that were applicable to our track, and also understanding how a .erb file works.
+- Digging through the code to find files that were applicable to our track, and also understanding how an .erb file works.
+- Getting started on large code-base with no walkthrough of architecture
 
 ### Future Iterations
 - Implement some kind of thumbs-up/thumbs-down to mark them as actually relevant or not relevant
